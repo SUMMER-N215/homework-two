@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: GillSansReg;
+  src: url(/fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: PTserif;
+  src: url(/fonts/PTSerif-Regular.ttf);
+}
+nav {
+  width: 980px;
+  height: 90px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-bottom: solid 2px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: GillSansReg;
+}
+nav .logo {
+  position: relative;
+  width: 92px;
+  height: 42px;
+  border: solid 2px #ffffff;
+}
+nav .logo span {
+  position: absolute;
+  bottom: -5px;
+  color: #ffffff;
+}
+nav .links {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+nav .links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav .links span {
+  color: #ee4367;
+}
+
+.hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.8)), to(rgba(255, 209, 64, 0.8))), url(/images/home-hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(/images/home-hero.jpg);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .centered-content {
+  width: 300px;
+  text-align: center;
+}
+.hero .centered-content h1 {
+  font-family: PTserif;
+  color: #ffffff;
+}
+.hero .centered-content h2 {
+  font-family: GillSansReg;
+  color: #ee4367;
+}
+
+.quote {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.quote .content {
+  width: 789px;
+}
+.quote .content .quote-text {
+  font-family: GillSansReg;
+  color: #FFD140;
+  font-size: 18px;
+  font-style: italic;
+}
+.quote .content .author {
+  color: #ee4367;
+  margin-bottom: 0px;
+}
+.quote .content .title {
+  font-size: 10px;
+}
+
+.upcoming-events {
+  background-color: purple;
+  height: 320px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0, 40px;
+  font-family: GillSansReg;
+}
+.upcoming-events .title {
+  margin-top: -30px;
+  height: 35px;
+  width: 392px;
+  border-bottom: solid 2px #ffffff;
+  padding-bottom: 40px;
+}
+.upcoming-events .events {
+  height: 124px;
+  margin-top: -120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.upcoming-events .events .event {
+  width: 210px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.upcoming-events .events .event .date {
+  width: 60px;
+  height: 60px;
+  background-color: #ee4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.upcoming-events .events .event .event-detail {
+  font-family: GillSansReg;
+  font-size: 14px;
+  width: 140px;
+}
+
+footer {
+  height: 400px;
+  background-color: #ee4367;
+}
+footer .signup {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .signup input {
+  height: 100%;
+  width: 529px;
+  background-color: #f56b88;
+  border: none;
+  color: rgba(238, 67, 103, 0.5);
+}
+footer .signup ::-webkit-input-placeholder {
+  color: rgba(238, 67, 103, 0.5);
+  opacity: 1;
+}
+footer .signup ::-moz-placeholder {
+  color: rgba(238, 67, 103, 0.5);
+  opacity: 1;
+}
+footer .signup :-ms-input-placeholder {
+  color: rgba(238, 67, 103, 0.5);
+  opacity: 1;
+}
+footer .signup ::-ms-input-placeholder {
+  color: rgba(238, 67, 103, 0.5);
+  opacity: 1;
+}
+footer .signup ::placeholder {
+  color: rgba(238, 67, 103, 0.5);
+  opacity: 1;
+}
+footer .signup .button {
+  height: 100%;
+  width: 167px;
+  background-color: #ffffff;
+}

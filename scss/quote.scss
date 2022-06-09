@@ -1,0 +1,30 @@
+.quote {
+height: 300px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+.content {
+    width: 789px;
+
+    .quote-text{
+        font-family: GillSansReg;
+        color: #FFD140;
+        font-size: 18px;
+        font-style: italic;
+    }
+
+.author{
+    color: #ee4367;
+    margin-bottom: 0px;
+
+
+}
+
+.title {
+font-size: 10px;
+
+}
+}
+
+}
